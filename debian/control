@@ -1,0 +1,19 @@
+Source: lemonbar
+Section: x11
+Priority: extra
+Maintainer: Zhong Jianxin <azuwis@gmail.com>
+Build-Depends: debhelper (>=9)
+               libxcb1-dev,
+               libxcb-randr0-dev,
+               libxcb-xinerama0-dev
+Standards-Version: 3.9.6
+Homepage: https://github.com/LemonBoy/bar
+
+Package: lemonbar
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Featherweight lemon-scented bar
+ A lightweight bar entirely based on XCB. Provides full UTF-8 support, basic
+ formatting, RandR and Xinerama support and EWMH compliance without wasting your
+ precious memory.
